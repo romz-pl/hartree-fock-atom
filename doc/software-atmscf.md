@@ -166,7 +166,7 @@ $$
 E=\sum_{s}q_s\,I_s+\sum_{s\le t}\Big[\sum_{k}a^{k}_{st}\,F^{k}(s,t)+\sum_{k}b^{k}_{st}\,G^{k}(s,t)\Big]
 $$
 
-Here $I_s$ is the one-electron integral (kinetic energy plus nuclear attraction, or the ECP in valence-only work), $F^{k}$ and $G^{k}$ are direct and exchange radial (Slater) integrals, and $a^{k}_{st}$, $b^{k}_{st}$ are term-dependent coefficients. This is my schematic notation, not the paper's.
+Here $I_s$ is the one-electron integral (kinetic energy plus nuclear attraction, or the ECP in valence-only work), $F^{k}$ and $G^{k}$ are direct and exchange radial (Slater) integrals, and $a^{k}_ {st}$, $b^{k}_ {st}$ are term-dependent coefficients. This is my schematic notation, not the paper's.
 
 What is specific to the program [V]: the paper tabulates the needed **energy-expression coefficients** for the ground states of all atoms, to the extent LS coupling applies, plus excited states that involve large-$\ell$ orbitals. Version 2.0 corrected two entries and added half-filled-shell states (Section 3). With a few exceptions, only one open shell per symmetry is allowed.
 
