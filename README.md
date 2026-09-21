@@ -9,3 +9,4 @@
 + [B-spline HF (Froese Fischer)](./doc/software-b-spline-hf.md)
 + [qrhf (finite-difference)](./doc/software-qrhf.md)
 + [atmscf (Columbus version)](./doc/software-atmscf.md)
++ [Chernysheva–Cherepkov–Radojević HF program](./doc/software-chernysheva.md)
