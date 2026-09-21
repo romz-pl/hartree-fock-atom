@@ -291,14 +291,14 @@ $$
 \begin{pmatrix} l & k & l' \\ 0 & 0 & 0 \end{pmatrix}
 $$
 
-where $C^{(k)}_q = \sqrt{4\pi/(2k+1)}\,Y_{kq}$ is the reduced spherical harmonic. The 3-j symbol with three zeros enforces the **parity selection rule**: $l + k + l'$ must be even.
+where $C^{(k)} _ q = \sqrt{4\pi/(2k+1)}\,Y_{kq}$ is the reduced spherical harmonic. The 3-j symbol with three zeros enforces the **parity selection rule**: $l + k + l'$ must be even.
 
 ### 8.4 Direct and exchange angular coefficients
 
 After summing over magnetic quantum numbers, the energy of a configuration takes the form
 
 $$
-E = \sum_a q_a I(a) + \sum_{a}\sum_{k>0} f_k(aa)\,F^k(a,a) + \sum_{a<b} \left( \sum_{k} f_k(ab) \, F^k(a,b) + \sum_k g_k(ab) \, G^k(a,b) \right)
+E = \sum_{a} q _ a I(a) + \sum_{a} \sum_{k>0} f_k(aa) F^k(a,a) + \sum_{a<b} \left( \sum_{k} f_k(ab)  F^k(a,b) + \sum_k g_k(ab) G^k(a,b) \right)
 $$
 
 where $q_a$ is the occupation number, $I(a)$ the one-electron radial integral
@@ -319,8 +319,7 @@ Varying $E$ with respect to $P_{nl}$ subject to $\langle P_{nl}|P_{n'l}\rangle =
 
 $$
 \boxed{
-\left[ -\frac{1}{2}\frac{d^2}{dr^2} + \frac{l(l+1)}{2r^2} - \frac{Z}{r} + Y_a(r) \right]P_a(r)
-- X_a(r) = \varepsilon_a\,P_a(r) + \sum_{b\neq a}\delta_{l_al_b}\,\varepsilon_{ab}\,P_b(r)
+\left[ -\frac{1}{2}\frac{d^2}{dr^2} + \frac{l(l+1)}{2r^2} - \frac{Z}{r} + Y_a(r) \right]P_a(r) - X_a(r) = \varepsilon_a\,P_a(r) + \sum_{b\neq a}\delta_{l_al_b}\,\varepsilon_{ab}\,P_b(r)
 }
 $$
 
@@ -496,7 +495,9 @@ until |ΔE| < tol and max|ΔP| < tol
 
 - **Damping** (simple mixing) with $\alpha \sim 0.3$–$0.7$.
 - **Direct Inversion in the Iterative Subspace (DIIS)**: extrapolate using stored error vectors
+  
   $$ \mathbf{e}_i = \mathbf{F}_i\mathbf{D}_i\mathbf{S} - \mathbf{S}\mathbf{D}_i\mathbf{F}_i $$
+  
 - **Level shifting**: add a constant to virtual orbital energies.
 - **Newton-Raphson / quasi-Newton** second-order SCF for stubborn open-shell cases.
 
